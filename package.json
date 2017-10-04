@@ -1,0 +1,8 @@
+{
+  "name": "starcards",
+  "version": "0.1.0",
+  "description": "Star Cards",
+  "main": "index.js",
+  "author": "Marcus Turnbo <marcus@emarcus.com>",
+  "license": "MIT"
+}
