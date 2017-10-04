@@ -19,6 +19,9 @@ module.exports = {
 	plugins: [
 		HtmlWebpackPluginConfig
 	],
+	externals: {
+		'Config': JSON.stringify(require('./config.json'))
+	},
   module: {
     loaders: [
       {
