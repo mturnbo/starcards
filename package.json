@@ -1,8 +1,13 @@
 {
   "name": "starcards",
-  "version": "0.1.0",
   "description": "Star Cards",
-  "main": "index.js",
   "author": "Marcus Turnbo <marcus@emarcus.com>",
-  "license": "MIT"
+  "version": "0.1.0",
+  "license": "MIT",
+  "dependencies": {
+    "path": "^0.12.7",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
+  },
+  "main": "index.js"
 }
