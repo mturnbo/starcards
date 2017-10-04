@@ -1,5 +1,8 @@
 # Star Cards Change Log
 
+#### v.0.1.2
+* *Update*: Added MovieCard component
+
 #### v.0.1.1
 * *Update*: Added Card component
 

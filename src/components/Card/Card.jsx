@@ -15,7 +15,7 @@ class Card extends React.Component {
 	}
 
 	_fetch(resource, id) {
-		let endpoint = Config.apiUrl + resource + '/' + id;
+		const endpoint = Config.apiUrl + resource + '/' + id;
 
 		fetch(endpoint)
 			.then((response) => {

@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const BUILD_DIR = path.resolve(__dirname, 'public');
 const APP_DIR = path.resolve(__dirname, 'src');
@@ -17,7 +18,10 @@ module.exports = {
     filename: 'bundle.js'
   },
 	plugins: [
-		HtmlWebpackPluginConfig
+		HtmlWebpackPluginConfig,
+		new CopyWebpackPlugin([
+			{ from: 'assets', to: 'assets' }
+		])
 	],
 	externals: {
 		'Config': JSON.stringify(require('./config.json'))
@@ -33,7 +37,11 @@ module.exports = {
         test: /\.jsx$/,
         loader: 'babel-loader',
         exclude: /node_modules/
-      }
+      },
+			{
+				test: /\.(jpg|gif|png|svg|)$/,
+				loader: 'file-loader?name=[path][name].[ext]&context=./assets'
+			}
     ]
   }
 }
