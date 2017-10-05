@@ -23,7 +23,7 @@ class MovieCardCollection extends React.Component {
 			.then((response) => {
 				response.json().then((data) => {
 					if (response.status !== 200) {
-						console.log(`Error fetching data. Status Code: ${response.status}`);
+						console.log(`Error fetching movies. Status Code: ${response.status}`);
 						return;
 					}
 					this.setState({movieData: data.results});
