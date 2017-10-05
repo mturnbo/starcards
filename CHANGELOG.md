@@ -1,5 +1,9 @@
 # Star Cards Change Log
 
+#### v.0.1.4
+* *Update*: Added MovieCardCollection component
+* *Update*: Added Bootstrap style and card style
+
 #### v.0.1.2
 * *Update*: Added MovieCard component
 

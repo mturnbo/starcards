@@ -1,0 +1,27 @@
+.movie-card {
+	border: 2px solid #666666;
+	border-radius: 0px 20px 0px 20px;
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	font-size: 14px;
+	max-width: 200px;
+	overflow: hidden;
+	margin: 20px;
+	background-color: #FFFFFF;
+}
+
+.movie-info {
+	padding: 10px;
+}
+
+.movie-poster {
+	width: 200px;
+}
+
+.movie-title {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.movie-director {
+	font-size: 14px;
+}

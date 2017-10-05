@@ -1,4 +1,5 @@
 import React from 'react';
+import './moviecard.css';
 
 class MovieCard extends React.Component {
 
@@ -8,11 +9,13 @@ class MovieCard extends React.Component {
 		console.log('>>>> CHARACTER COUNT:', this.props.characters);
 
 		return (
-			<div>
-				<div><img src={posterImage} /></div>
-				<div>{this.props.title}</div>
-				<div>Directed by {this.props.director}</div>
-				<div>Characters:</div>
+			<div className="movie-card">
+				<div><img className="movie-poster" src={posterImage} /></div>
+				<div className="movie-info">
+					<div className="movie-title">{this.props.title}</div>
+					<div className="movie-director">Directed by {this.props.director}</div>
+					<div>Characters:</div>
+				</div>
 			</div>
 		);
 	}

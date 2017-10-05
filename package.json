@@ -2,9 +2,10 @@
   "name": "starcards",
   "description": "Star Cards",
   "author": "Marcus Turnbo <marcus@emarcus.com>",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "license": "MIT",
   "dependencies": {
+    "lodash": "^4.17.4",
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
   },
@@ -15,6 +16,7 @@
     "babel-preset-react": "^6.24.1",
     "copy-webpack-plugin": "^4.1.0",
     "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.1",
     "file-loader": "^1.1.4",
     "html-webpack-plugin": "^2.30.1",
     "path": "^0.12.7",
