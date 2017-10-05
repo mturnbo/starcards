@@ -1,10 +1,10 @@
 import React from 'react';
-import './moviecardcollection.css';
-import MovieCard from '../MovieCard';
+import './moviescrollchart.css';
+import {BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recharts';
 import Config from 'Config';
 import {sortBy as _sortBy} from 'lodash';
 
-class MovieCardCollection extends React.Component {
+class MovieScrollChart extends React.Component {
 
 	constructor(props) {
 		super();
@@ -35,16 +35,22 @@ class MovieCardCollection extends React.Component {
 	}
 
 	render() {
-		const movieCollection = _sortBy(this.state.movieData, 'episode_id').map((movie) => {
-			return <MovieCard episode_id={movie.episode_id} title={movie.title} director={movie.director}
-												key={movie.episode_id} characters={movie.characters}/>;
+		const data = _sortBy(this.state.movieData, 'episode_id').map((movie) => {
+			return {
+				name: movie.title,
+				value: movie.opening_crawl.length
+			};
 		});
 
 		return (
-			<div className="movie-card-container">
-				{movieCollection}
+			<div className="movie-scroll-chart">
+				<BarChart width={800} height={250} data={data}>
+					<XAxis dataKey="name" />
+					<YAxis />
+					<CartesianGrid strokeDasharray="3 3" />
+				</BarChart>
 			</div>);
 	}
 }
 
-export default MovieCardCollection;
+export default MovieScrollChart;
