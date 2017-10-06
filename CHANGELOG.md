@@ -1,5 +1,8 @@
 # Star Cards Change Log
 
+#### v.0.2.1
+* *Fix*: Changed labels for chart
+
 #### v.0.2.0
 * *Update*: Updated movie cards to display 2 movies
 
