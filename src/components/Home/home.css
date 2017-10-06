@@ -1,17 +1,15 @@
 .home-container {
   display: flex;
   flex-direction: row;
-  border: 1px solid #000000;
 }
 
 .home-sidebar {
   display: flex;
   flex-direction: column;
-  width: 200px;
+  width: 350px;
 }
 
 .home-favorites, .home-scroll-chart  {
-  border: 1px solid #000000;
   min-height: 100px;
 }
 

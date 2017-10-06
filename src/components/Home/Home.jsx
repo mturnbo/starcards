@@ -4,6 +4,7 @@ import MovieCardCollection from '../MovieCardCollection';
 import MovieScrollChart from '../MovieScrollChart';
 import Config from 'Config';
 import {sortBy as _sortBy} from 'lodash';
+import CharacterCard from "../CharacterCard";
 
 class Home extends React.Component {
 
@@ -44,9 +45,15 @@ class Home extends React.Component {
           <div className="home-container">
             <div className="home-sidebar">
               <div className="home-favorites">
+								<CharacterCard label="Favorite Character" id="2" />
+								<CharacterCard label="Least Favorite Character" id="12" />
               </div>
               <div className="home-scroll-chart">
-                <MovieScrollChart data={movieCollection} />
+                <MovieScrollChart
+									data={movieCollection}
+									width={300}
+									height={250}
+									label="How long are those opening credits?" />
               </div>
             </div>
             <div className="home-movie-cards">

@@ -1,3 +1,9 @@
 .movie-scroll-chart {
 	width: 300px;
 }
+
+.movie-scroll-chart-label {
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px;
+}
