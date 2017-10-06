@@ -1,5 +1,8 @@
 # Star Cards Change Log
 
+#### v.0.1.6
+* *Update*: Added favicon
+
 #### v.0.1.5
 * *Update*: Added Character component
 

@@ -9,7 +9,8 @@ const APP_DIR = path.resolve(__dirname, 'src');
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 	template: APP_DIR + '/index.html',
 	filename: 'index.html',
-	inject: 'body'
+	inject: 'body',
+	favicon: 'assets/images/favicon.ico'
 });
 
 module.exports = {
