@@ -5,14 +5,31 @@ import MovieCard from '../MovieCard';
 class MovieCardCollection extends React.Component {
 
 	render() {
-		const movieCollection = this.props.data.map((movie) => {
-			return <MovieCard
-					episode_id={movie.episode_id}
-					title={movie.title}
-					director={movie.director}
-					key={movie.episode_id}
-					characters={movie.characters}/>;
-		});
+
+		let movieCollection = [];
+		for (var i = 0; i < this.props.data.length; i += 2) {
+			let movies = []
+			movies.push(
+				{
+				episode_id: this.props.data[i].episode_id,
+				title: this.props.data[i].title,
+				director: this.props.data[i].director,
+				characters: this.props.data[i].characters
+				}
+			);
+			if (typeof this.props.data[i + 1] !== 'undefined') {
+				movies.push(
+					{
+						episode_id: this.props.data[i + 1].episode_id,
+						title: this.props.data[i + 1].title,
+						director: this.props.data[i + 1].director,
+						characters: this.props.data[i + 1].characters
+					}
+				);
+			}
+
+			movieCollection.push(<MovieCard movies={movies} />);
+		}
 
 		return (
 				<div className="movie-card-container">

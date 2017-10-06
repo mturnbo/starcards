@@ -2,7 +2,7 @@
   "name": "starcards",
   "description": "Star Cards",
   "author": "Marcus Turnbo <marcus@emarcus.com>",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "license": "MIT",
   "dependencies": {
     "lodash": "^4.17.4",

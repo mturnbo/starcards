@@ -1,31 +1,22 @@
 import React from 'react';
-import Character from '../Character';
+import Movie from '../Movie';
 import './moviecard.css';
 
 class MovieCard extends React.Component {
-
 	render() {
-		const posterImage = '/assets/images/StarWarsEpisode' + this.props.episode_id + '.jpg';
-
-		const numCharacters = 3;
-		const characters = this.props.characters.slice(0, numCharacters).map((character) => {
-			let characterId = character.substring(0, character.lastIndexOf("/")).split("/").pop();
-			return <Character id={characterId} key={characterId} />
+		const movies = this.props.movies.map((movie) => {
+			return (
+				<Movie
+					episode_id={movie.episode_id}
+					title={movie.title}
+					director={movie.director}
+					characters={movie.characters} />
+			);
 		});
 
 		return (
 			<div className="movie-card">
-				<div><img className="movie-poster" src={posterImage} /></div>
-				<div className="movie-info">
-					<div className="movie-title">{this.props.title}</div>
-					<div className="movie-director">Directed by {this.props.director}</div>
-					<div>
-						Characters:
-						<ul>
-						{characters}
-						</ul>
-					</div>
-				</div>
+				{movies}
 			</div>
 		);
 	}
