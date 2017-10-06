@@ -1,5 +1,8 @@
 # Star Cards Change Log
 
+#### v.1.0.0
+* *Update*: Added tests
+
 #### v.0.2.1
 * *Fix*: Changed labels for chart
 
