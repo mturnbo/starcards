@@ -1,5 +1,9 @@
 # Star Cards Change Log
 
+#### v.0.1.8
+* *Fix*: Updated data for chart
+* *Update*: Added Home component with new layout and styling
+
 #### v.0.1.6
 * *Update*: Added favicon
 

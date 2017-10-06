@@ -1,6 +1,5 @@
 import React from 'react';
-import MovieCardCollection from '../MovieCardCollection';
-import MovieScrollChart from '../MovieScrollChart';
+import Home from '../Home';
 
 class App extends React.Component {
 	render() {
@@ -8,9 +7,9 @@ class App extends React.Component {
 			<div>
 				<h1>Star Cards</h1>
 				<hr />
-				<MovieScrollChart />
-				<MovieCardCollection />
-			</div>);
+				<Home />
+			</div>
+		);
 	}
 }
 
