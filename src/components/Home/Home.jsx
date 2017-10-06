@@ -45,13 +45,13 @@ class Home extends React.Component {
           <div className="home-container">
             <div className="home-sidebar">
               <div className="home-favorites">
-								<CharacterCard label="Favorite Character" id="2" />
-								<CharacterCard label="Least Favorite Character" id="12" />
+								<CharacterCard label="Favorite Character" id={11} />
+								<CharacterCard label="Least Favorite Character" id={12} />
               </div>
               <div className="home-scroll-chart">
                 <MovieScrollChart
 									data={movieCollection}
-									width={300}
+									width={290}
 									height={250}
 									label="How long are those opening credits?" />
               </div>

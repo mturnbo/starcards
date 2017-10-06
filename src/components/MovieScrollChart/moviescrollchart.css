@@ -1,5 +1,7 @@
 .movie-scroll-chart {
+	border: 1px solid #999999;
 	width: 300px;
+	margin: 0px 20px 20px 20px;
 }
 
 .movie-scroll-chart-label {

@@ -1,6 +1,5 @@
 .movie-card {
-	border: 2px solid #666666;
-	border-radius: 0px 20px 0px 20px;
+	border: 1px solid #999999;
 	overflow: hidden;
 	margin: 5px;
 	background-color: #FFFFFF;

@@ -28,7 +28,7 @@ class MovieCardCollection extends React.Component {
 				);
 			}
 
-			movieCollection.push(<MovieCard movies={movies} />);
+			movieCollection.push(<MovieCard movies={movies} key={i}/>);
 		}
 
 		return (
